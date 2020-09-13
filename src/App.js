@@ -7,7 +7,7 @@ function App() {
 	return (
 		<>
 			<Switch>
-				<Route path="/movie/:movieId" component={MovieDetail} />
+				<Route path="/Movie-App/movie/:movieId" component={MovieDetail} />
 				<Route path="/" exact component={LandingPage} />
 			</Switch>
 		</>
