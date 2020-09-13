@@ -1,14 +1,15 @@
 import React from 'react';
 import { Col } from 'antd';
+import { Link } from 'react-router-dom';
 
 const GridCards = ({ movieId, image, movieName, landingPage, characterName }) => {
 	if (landingPage) {
 		return (
 			<Col lg={6} md={8} xs={24}>
 				<div style={{ position: 'relative' }}>
-					<a href={`/Movie-App/movie/${movieId}`}>
+					<Link to={`/movie/${movieId}`}>
 						<img src={image} alt={movieName} style={{ width: '100%', height: '320px' }} />
-					</a>
+					</Link>
 				</div>
 			</Col>
 		);
