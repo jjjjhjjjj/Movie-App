@@ -6,9 +6,10 @@ import { Switch, Route } from 'react-router-dom';
 function App() {
 	return (
 		<>
+			hi
 			<Switch>
-				<Route path="/" exact component={LandingPage} />
 				<Route path="/movie/:movieId" component={MovieDetail} />
+				<Route path="/" exact component={LandingPage} />
 			</Switch>
 		</>
 	);
